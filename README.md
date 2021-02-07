@@ -16,6 +16,12 @@ View my project at https://mschall217.github.io/professional-portfolio/
 
 This site is used to display everything that could make me employer competive! Show casing the skills I have learned in CSS and HTML this site is also an easy and navigatable link to all (some!) of my projects for a recruiter to look though. 
 
+
+![screenshot 1](assets/images/screenshot1.png)
+![screenshot 1](assets/images/screenshot2.png)
+
+
+
 ## Support
 
 Please [open an issue](https://github.com/mschall217/professional-portfolio/issues/new) for support.

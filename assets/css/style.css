@@ -1,5 +1,5 @@
-main{
-
+:root{
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #pixles{
@@ -9,9 +9,10 @@ main{
     background-size: cover;
     background-position: center;
 }
+/* main background image formatting */
 
 .header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     background-color: black;
     color: white;
 }
@@ -25,6 +26,7 @@ main{
     padding-left: 10px;
     margin-left: 0px;
 }
+/* makes my name stay to the left of the page and look like a tab in all upper case  */
 .header nav{
     padding-top: 15px;
     padding-right: 20px;
@@ -37,22 +39,23 @@ main{
     display: inline-block;
     padding: 2px;
 }
+/* displays my nav bar across the top of the page  */
 a{
     text-decoration: none;
     color: white;
 }
-
+/* make a tags simple */
 
 h2{
     color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     font-size: 50px;
     text-align: right;
 }
 
 p{
     color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     font-size: 18px;
 }
 
@@ -60,7 +63,7 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
-
+/* wraps my sections so they are even on the page  */
 .about-me h2, .work h2, .contact-me h2{
     width: 27%;
     margin: 10px;
@@ -68,9 +71,10 @@ p{
     border-right: black solid 3px;
     text-transform: uppercase;
 }
+/* makes all my headers look the same  */
 
 .about-me p{
-    width: 67%;
+    max-width: 800px;
     margin-top: 20px;
     margin-left: 20px;
     text-transform: lowercase;
@@ -89,6 +93,7 @@ p{
     position: relative;
     flex-direction: column;
 }
+/* how my a tags are lined up in a */
 #work a img{
     max-height: 200px;
     max-width: 800px;
@@ -99,20 +104,20 @@ p{
     text-decoration: none;
     color: white;
     font-size: 28px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     text-shadow:
     -1px -1px 0 #000,  
      1px -1px 0 #000,
      -1px 1px 0 #000,
       1px 1px 0 #000;
-
 }
+/* how to get the headers over the pictures so that you know what they are  */
 .work div{
     display: inline-flex;
     flex-direction: wrap;
     justify-content: flex-start;
 }
-
+/* how those a tags wrap around eachother within the work section */
 footer{
     background-color: black;
     color: white;
@@ -127,16 +132,22 @@ footer h2{
     margin: 10px;
     margin-top: 20px;
     margin-left: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     font-size: 18px;
 }
-
+/* how the contact me displays at the bottom */
 .contact-me a {
     padding: 25px;
     text-decoration: underline;
     text-align: justify;
     text-transform: uppercase;
 }
+/* getting the list spaced evenly  */
+header a:hover, footer a:hover{
+    text-shadow: 8px 8px 12px whitesmoke;
+}
+/* added a hover element so the user knows what tags they are on  */
+
 
 @media screen and (max-width: 950px) {
     *{
@@ -189,3 +200,7 @@ footer h2{
         flex-direction: column;
         width: 100%;
   }
+/* this code took a lot of playing around in the inspect feature
+it ensures that the website looks good on mobile 
+the nav gars condense and the borders fall beneathe the titles
+the work projects line up to flow in a colum down  */
