@@ -6,6 +6,7 @@ This is a portfolio to showcase my work, skills, and talents to an employer look
 - [Installation](#installation)
 - [Usage](#usage)
 - [Support](#support)
+- [Technologies](#Technologies)
 - [Contributing](#contributing)
 
 ## Installation
@@ -20,7 +21,9 @@ This site is used to display everything that could make me employer competive! S
 ![screenshot 1](assets/images/screenshot1.png)
 ![screenshot 1](assets/images/screenshot2.png)
 
-
+## Technologies
+  HTML 
+  CSS
 
 ## Support
 
